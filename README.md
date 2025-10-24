@@ -32,7 +32,7 @@ writing this library was the next best thing.
 <factor>     ::= <unary> (("*" | "/" | "<<" | ">>") <unary>)*
 <unary>      ::= ("-" | "+") <unary> | <pow>
 <pow>        ::= <primary> ( ("**" | "^") <pow> )?
-<primary>    ::= [0-9]+ | "(" <expression> ")"
+<primary>    ::= NUMBER | "(" <expression> ")"
 ```  
 
 ## Why no multibyte support?  
