@@ -35,7 +35,7 @@ writing this library was the next best thing.
 <primary>    ::= NUMBER | "(" <expression> ")"
 ```  
 
-## Why no multibyte support?  
+## Why no multi-byte support?  
 This parser focuses on plain ASCII math expressions.    
 While using `rune` iteration or `bufio.Reader` would make Unicode support straightforward,  
 working directly with raw bytes was more interesting and educational for this project.  
