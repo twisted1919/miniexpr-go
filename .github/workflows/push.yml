@@ -1,4 +1,4 @@
-name: golangci-lint
+name: push
 on:
   push:
   pull_request:
@@ -19,3 +19,13 @@ jobs:
         uses: golangci/golangci-lint-action@v8
         with:
           version: v2.5
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+      - name: test
+        run: go test ./...
