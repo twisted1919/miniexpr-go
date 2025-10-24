@@ -198,8 +198,6 @@ func (s *Scanner) scanNumber(char byte) error {
 
 			char, ok = s.peek()
 			if !ok || !s.isDigit(char) {
-				s.pos++
-
 				return NewUnexpectedTokenError(char, s.pos)
 			}
 
@@ -211,8 +209,6 @@ func (s *Scanner) scanNumber(char byte) error {
 
 			char, ok = s.peek()
 			if !ok || !s.isDigit(char) {
-				s.pos++
-
 				return NewUnexpectedTokenError(char, s.pos)
 			}
 
