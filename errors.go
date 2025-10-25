@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	// ErrUnknownExpression is retruned for unknown expressions.
+	// ErrUnknownExpression is returned for unknown expressions.
 	ErrUnknownExpression = errors.New("unknown expression")
 	// ErrUnknownOperator is returned for unknown operators.
 	ErrUnknownOperator = errors.New("unknown operator")
