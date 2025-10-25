@@ -149,11 +149,11 @@ func (s *Scanner) advance() (byte, bool) {
 		return 0, false
 	}
 
-	ch := s.source.At(s.current)
+	char := s.source.At(s.current)
 	s.pos++
 	s.current++
 
-	return ch, true
+	return char, true
 }
 
 // nolint: nolintlint, cyclop, funlen
