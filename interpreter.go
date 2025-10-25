@@ -75,7 +75,7 @@ func (v Interpreter) VisitUnaryExpr(expr UnaryExpr) (float64, error) {
 	}
 }
 
-// VisitGroupingExpr implements the visitor pattern fpr the GroupingExpr.
+// VisitGroupingExpr implements the visitor pattern for the GroupingExpr.
 func (v Interpreter) VisitGroupingExpr(expr GroupingExpr) (float64, error) {
 	val, err := expr.Expr.Accept(v)
 	if err != nil {
