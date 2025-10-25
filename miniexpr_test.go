@@ -70,7 +70,7 @@ func TestEvaluate_Valid(t *testing.T) {
 		{"((2))**((3))", 8},
 		{"(((((1+2)))))", 3},
 
-		// shifts (same precedence as * and / in your grammar)
+		// shifts (same precedence as * and / in our grammar)
 		{"2<<3", 16},
 		{"16>>3", 2},
 		{"1+2<<3", 17}, // 1 + (2<<3)
