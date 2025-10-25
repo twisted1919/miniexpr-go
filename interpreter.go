@@ -19,7 +19,7 @@ func (v Interpreter) VisitLiteralExpr(expr LiteralExpr) (float64, error) {
 	return expr.Value, nil
 }
 
-// VisitBinaryExpr implements the visitor pattern fpr the BinaryExpr.
+// VisitBinaryExpr implements the visitor pattern for the BinaryExpr.
 // nolint: nolintlint, cyclop
 func (v Interpreter) VisitBinaryExpr(expr BinaryExpr) (float64, error) {
 	left, err := expr.Left.Accept(v)
@@ -57,7 +57,7 @@ func (v Interpreter) VisitBinaryExpr(expr BinaryExpr) (float64, error) {
 	}
 }
 
-// VisitUnaryExpr implements the visitor pattern fpr the UnaryExpr.
+// VisitUnaryExpr implements the visitor pattern for the UnaryExpr.
 func (v Interpreter) VisitUnaryExpr(expr UnaryExpr) (float64, error) {
 	right, err := expr.Right.Accept(v)
 	if err != nil {
