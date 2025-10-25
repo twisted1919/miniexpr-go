@@ -14,7 +14,7 @@ func NewInterpreter() *Interpreter {
 	return &Interpreter{}
 }
 
-// VisitLiteralExpr implements the visitor pattern fpr the LiteralExpr.
+// VisitLiteralExpr implements the visitor pattern for the LiteralExpr.
 func (v Interpreter) VisitLiteralExpr(expr LiteralExpr) (float64, error) {
 	return expr.Value, nil
 }
