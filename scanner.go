@@ -118,6 +118,8 @@ func (s *Scanner) Scan() (TokenList, error) {
 				continue
 			}
 
+			_, _ = s.advance()
+
 			return nil, NewUnexpectedTokenError(char, s.pos)
 		}
 	}
