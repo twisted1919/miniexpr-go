@@ -35,7 +35,7 @@ writing this library was the next best thing.
 <primary>    ::= NUMBER | "(" <expression> ")"
 ```  
 
-## Why no multi-byte support?  
+## Why no multibyte support?  
 This parser focuses on plain ASCII math expressions.    
 While using `rune` iteration or `bufio.Reader` would make Unicode support straightforward,  
 working directly with raw bytes was more interesting and educational for this project.  
@@ -64,6 +64,10 @@ func main() {
 }
 
 ```
+
+## Try it out
+There's a very simple [REPL](https://github.com/twisted1919/miniexpr-repl-go) you can quickly install to try MiniExpr out.
+
 
 ### Testing
 ```bash 
